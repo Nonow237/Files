@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #7ec0ff; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+#game { display: block; width: 100vw; height: 62vh; touch-action: none; image-rendering: pixelated; background: linear-gradient(#7ec0ff 0%, #bfe7ff 60%); }
+#hud { position: fixed; top: 0; left: 0; right: 0; padding: .4rem .6rem; color: #062b4f; text-shadow: 1px 1px #fff7; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
+#stats span { margin-right: .7rem; font-weight: 700; }
+#msg { font-size: .9rem; opacity: .9; }
+#controls { position: fixed; bottom: .6rem; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 .6rem; gap: .6rem; }
+#controls .pad { display: flex; gap: .6rem; }
+#controls button { font-size: 1.4rem; width: 3.6rem; height: 3.6rem; border-radius: .9rem; border: none; background: #153e7288; color: #fff; backdrop-filter: blur(6px); box-shadow: 0 .3rem .6rem #0003 inset, 0 .1rem .2rem #0002; }
+#controls button:active { transform: translateY(1px) scale(.98); }
+@media (min-aspect-ratio: 16/10) {
+  #game { height: 68vh; }
+}
+@media (min-width: 768px) {
+  #controls button { width: 4rem; height: 4rem; font-size: 1.6rem; }
+}
